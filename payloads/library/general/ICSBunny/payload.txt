@@ -1,0 +1,32 @@
+#!/bin/bash
+#
+# Title:         ICS for Mac
+# Author:        Nicholas Adamou
+# Version:       2.0
+#
+# Sets the attack mode to ECM_ETHERNET for Mac ICS, then tests the internet connection
+#
+# White............Starting
+# Green..........Connected to the internet
+# Red.........Didn't connect to the internet
+#
+
+# Starting payload
+LED W
+
+# Set the attack mode
+ATTACKMODE ECM_ETHERNET
+
+while true; do
+  LED B
+  # Are we connected to the internet?
+  wget -q --spider http://google.com
+
+  if [ $? -eq 0 ]; then
+      LED G
+      sleep 5
+  else
+      LED R
+      sleep 5
+  fi
+done
