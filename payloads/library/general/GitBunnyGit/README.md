@@ -16,9 +16,9 @@ Configured for nix by default. Swap RNDIS_ETHERNET with ECM_ETHERNET on Windows
 Target must be sharing internet. BashBunny must have git installed.
 
  1. Run bb.sh (pause at main menu)
- 2. Plug in da bunny
+ 2. Plug in the bunny
  3. Connect (type 'c') 5 seconds after the white light
- 4. You can now ssh into the bunny (Run `tail -f /var/log/git.log` to monitor progress)
+ 4. You can now SSH into the bunny (Run `tail -f /var/log/git.log` to monitor progress)
 
 ## Status
 
